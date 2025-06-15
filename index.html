@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>Money Manager</h1>
+    <form id="entryForm">
+        <label>Date: <input type="date" id="date" required></label><br>
+        <label>Type:
+            <select id="type" required>
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+        </label><br>
+        <label>Category:
+            <select id="category" required></select>
+        </label><br>
+        <label id="subcategoryLabel" style="display:none;">Subcategory:
+            <select id="subcategory"></select>
+        </label><br>
+        <label>Amount (₹): <input type="number" id="amount" required></label><br>
+        <label>Mode of Payment:
+            <select id="paymentMode" required></select>
+        </label><br>
+        <button type="submit">Save Entry</button>
+    </form>
+
+    <h2>Graph and Report</h2>
+    <button onclick="generatePDF()">Generate PDF</button>
+    <canvas id="expenseChart" width="400" height="200"></canvas>
+
+    <script src="app.js"></script>
+</body>
+</html>
