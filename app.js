@@ -94,7 +94,7 @@ function init() {
         });
     });
 
-    fetch("PASTE_YOUR_WEB_APP_URL_HERE")
+    fetch("https://script.google.com/macros/s/AKfycbyIqoF66hze0BpU0CbiA9KxclTDzhGMhy1kiLZVFtpPKtGzU_bnD3o2asxWo5pwd5rLpA/exec")
         .then(res => res.json())
         .then(data => drawChart(data))
         .catch(err => console.error("Error loading chart data:", err));
