@@ -74,7 +74,7 @@ function init() {
             mode: paymentModeSelect.value
         };
 
-        fetch("PASTE_YOUR_WEB_APP_URL_HERE", {
+        fetch("https://script.google.com/macros/s/AKfycbzSqC9QAyXhbhBVU6c07EcnTIJsy51Q1BL1Ss1WzfLvR0jf33omqAUHszrBvdwottlyEg/exec", {
             method: "POST",
             body: JSON.stringify(payload),
             headers: {
@@ -94,7 +94,7 @@ function init() {
         });
     });
 
-    fetch("https://script.google.com/macros/s/AKfycbx1jy4r5dytdUvM7YpwrLeDYNO8yK7ikwJR5B7VVYaqxcyvswN3rw8409sv7bpRQdJSsQ/exec")
+    fetch("https://script.google.com/macros/s/AKfycbzSqC9QAyXhbhBVU6c07EcnTIJsy51Q1BL1Ss1WzfLvR0jf33omqAUHszrBvdwottlyEg/exec")
         .then(res => res.json())
         .then(data => drawChart(data))
         .catch(err => console.error("Error loading chart data:", err));
