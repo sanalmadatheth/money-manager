@@ -94,7 +94,7 @@ function init() {
         });
     });
 
-    fetch("https://script.google.com/macros/s/AKfycbyIqoF66hze0BpU0CbiA9KxclTDzhGMhy1kiLZVFtpPKtGzU_bnD3o2asxWo5pwd5rLpA/exec")
+    fetch("https://script.google.com/macros/s/AKfycbx1jy4r5dytdUvM7YpwrLeDYNO8yK7ikwJR5B7VVYaqxcyvswN3rw8409sv7bpRQdJSsQ/exec")
         .then(res => res.json())
         .then(data => drawChart(data))
         .catch(err => console.error("Error loading chart data:", err));
