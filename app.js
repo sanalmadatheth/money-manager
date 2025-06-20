@@ -74,7 +74,7 @@ function init() {
             mode: paymentModeSelect.value
         };
 
-        fetch("https://www.script.google.com/macros/s/AKfycbzzUnlqG7FcUXyvAkaIb3h2ElG93RpY4ApY8wQ81lYPlQ6l-34Ms_cVIVI9yDdenvYzIQ/exec", {
+        fetch("https://script.google.com/macros/s/AKfycbzzUnlqG7FcUXyvAkaIb3h2ElG93RpY4ApY8wQ81lYPlQ6l-34Ms_cVIVI9yDdenvYzIQ/exec", {
             method: "POST",
             body: JSON.stringify(payload),
             headers: {
@@ -94,7 +94,7 @@ function init() {
         });
     });
 
-    fetch("https://www.script.google.com/macros/s/AKfycbzzUnlqG7FcUXyvAkaIb3h2ElG93RpY4ApY8wQ81lYPlQ6l-34Ms_cVIVI9yDdenvYzIQ/exec")
+    fetch("https://script.google.com/macros/s/AKfycbzzUnlqG7FcUXyvAkaIb3h2ElG93RpY4ApY8wQ81lYPlQ6l-34Ms_cVIVI9yDdenvYzIQ/exec")
         .then(res => res.json())
         .then(data => drawChart(data))
         .catch(err => console.error("Error loading chart data:", err));
